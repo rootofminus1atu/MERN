@@ -1,0 +1,80 @@
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+  --max-width: 1280px;
+}
+
+body {
+  background-color: #f1f1f1;
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+.max-width {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.header-content {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+header a {
+  text-decoration: none;
+  color: #333;
+}
+
+.pages {
+  padding: 2rem;
+}
+
+
+.home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem;
+}
+
+.workouts {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.workout-details {
+  border: 0 solid #222;
+  background-color: #f8f8f8;
+  border-radius: 2rem;
+  box-shadow: 2px 2px 1rem rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.workout-details h3 {
+  margin: 0 0 0.8rem 0;
+  color: var(--primary);
+}
+
+.workout-details p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #222;
+}
+
