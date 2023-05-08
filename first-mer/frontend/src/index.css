@@ -47,6 +47,12 @@ header a {
 }
 
 
+
+
+
+
+
+
 .home {
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -78,3 +84,32 @@ header a {
   color: #222;
 }
 
+
+
+
+
+
+
+
+
+label, input {
+  display: block;
+}
+
+input {
+  padding: 0.6rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+}

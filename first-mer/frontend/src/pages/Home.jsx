@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import WorkoutDetails from '../components/WorkoutDetails'
+import Form from '../components/Form'
 
 export default function Home() {
   const [workouts, setWorkouts] = useState([])
@@ -15,6 +16,8 @@ export default function Home() {
       }
     }
 
+    console.log('fetching workouts')
+
     fetchWorkouts()
   }, [])
 
@@ -25,9 +28,7 @@ export default function Home() {
           <WorkoutDetails workout={workout} key={workout._id} />
         ))}
       </div>
-      <div className="form">
-        form here
-      </div>
+      <Form />
     </div>
   )
 }
